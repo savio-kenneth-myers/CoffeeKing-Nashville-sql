@@ -25,17 +25,18 @@
 
 1. [Project Overview](#project-overview)
 2. [Headline Results](#headline-results)
-3. [Dataset](#dataset)
-4. [Approach](#approach)
-5. [Findings in Detail](#findings-in-detail)
-6. [Original Metrics](#original-metrics)
-7. [Recommendations](#recommendations)
-8. [SQL Techniques Used](#sql-techniques-used)
-9. [Repository Structure](#repository-structure)
-10. [How to Reproduce](#how-to-reproduce)
-11. [Limitations and Next Steps](#limitations-and-next-steps)
-12. [Licence](#licence)
-13. [About the Author](#about-the-author)
+3. [Project Snapshots](#project-snapshots)
+4. [Dataset](#dataset)
+5. [Approach](#approach)
+6. [Findings in Detail](#findings-in-detail)
+7. [Original Metrics](#original-metrics)
+8. [Recommendations](#recommendations)
+9. [SQL Techniques Used](#sql-techniques-used)
+10. [Repository Structure](#repository-structure)
+11. [How to Reproduce](#how-to-reproduce)
+12. [Limitations and Next Steps](#limitations-and-next-steps)
+13. [Licence](#licence)
+14. [About the Author](#about-the-author)
 
 ---
 
@@ -69,6 +70,28 @@ This project answers those questions using SQL only, run in a Databricks noteboo
 | 5 | **Benchmark against Crema Coffee Roasters** | Highest Quality Score in the dataset at 13.50 |
 
 Of the three starting hypotheses, one was supported and two were disproved. The disproved ones changed the recommendation, which is why they were the most useful part of the project.
+
+## Project Snapshots
+
+A nine slide visual summary of the project, also shared as a LinkedIn carousel. Click any slide to view it full size.
+
+<table>
+  <tr>
+    <td width="33%"><a href="images/slide-01.png"><img src="images/slide-01.png" alt="Cover" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-02.png"><img src="images/slide-02.png" alt="The dataset" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-03.png"><img src="images/slide-03.png" alt="Three hypotheses" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="33%"><a href="images/slide-04.png"><img src="images/slide-04.png" alt="Best location" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-05.png"><img src="images/slide-05.png" alt="Operating schedule" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-06.png"><img src="images/slide-06.png" alt="Reviews and ratings" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="33%"><a href="images/slide-07.png"><img src="images/slide-07.png" alt="Two original metrics" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-08.png"><img src="images/slide-08.png" alt="Recommendations" width="100%"></a></td>
+    <td width="33%"><a href="images/slide-09.png"><img src="images/slide-09.png" alt="Closing slide" width="100%"></a></td>
+  </tr>
+</table>
 
 ## Dataset
 
@@ -254,6 +277,8 @@ The JOIN analysis compared Yelp's published business rating with the mean of ind
 CoffeeKing-Nashville-sql/
 ├── notebooks/
 │   └── Coffee_King EDA 2026-05-20 19_35_51.ipynb
+├── images/
+│   └── slide-01.png to slide-09.png
 ├── reports/
 │   ├── CoffeeKing_Full_Project_Report.pdf
 │   ├── CoffeeKing_Milestone1.pdf
@@ -270,6 +295,7 @@ CoffeeKing-Nashville-sql/
 | [`reports/CoffeeKing_Milestone1.pdf`](reports/CoffeeKing_Milestone1.pdf) | Milestone 1: project proposal, research questions and hypotheses |
 | [`reports/CoffeeKing_Milestone2.pdf`](reports/CoffeeKing_Milestone2.pdf) | Milestone 2: descriptive statistics and understanding the data |
 | [`reports/CoffeeKing_Milestone3.pdf`](reports/CoffeeKing_Milestone3.pdf) | Milestone 3: correlations, new metrics and cross table analysis |
+| [`images/`](images) | The nine carousel slides used in the Project Snapshots gallery |
 | [`LICENSE`](LICENSE) | MIT licence covering the code and analysis only |
 
 ## How to Reproduce
