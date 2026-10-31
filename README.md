@@ -28,7 +28,8 @@
 9. [Repository Structure](#repository-structure)
 10. [How to Reproduce](#how-to-reproduce)
 11. [Limitations and Next Steps](#limitations-and-next-steps)
-12. [About the Author](#about-the-author)
+12. [Licence](#licence)
+13. [About the Author](#about-the-author)
 
 ---
 
@@ -265,6 +266,10 @@ CoffeeKing-Nashville-sql/
 - **JSON columns.** `hours` and `attributes` were queried with pattern matching rather than fully parsed, which limits schedule detail.
 - **Small samples.** Some zip codes (for example 37220 with 3 shops) have too few businesses for firm conclusions.
 - **Next steps:** exclude chains, parse the JSON columns for exact opening hours, add sentiment analysis of review text, and track rating trends over time using review dates.
+
+## Licence
+
+The code and analysis in this repository are released under the [MIT Licence](LICENSE). The Yelp Academic Dataset is not covered by this licence and remains subject to Yelp's own terms. This project is for educational and portfolio purposes.
 
 ## About the Author
 
