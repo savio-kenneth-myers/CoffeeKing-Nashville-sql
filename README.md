@@ -13,6 +13,12 @@
   <img alt="Status" src="https://img.shields.io/badge/Status-Completed-2EA44F">
 </p>
 
+<p align="center">
+  <a href="reports/CoffeeKing_Full_Project_Report.pdf">Full report</a> |
+  <a href="notebooks/Coffee_King%20EDA%202026-05-20%2019_35_51.ipynb">SQL notebook</a> |
+  <a href="https://saviowork.netlify.app">Portfolio</a>
+</p>
+
 ---
 
 ## Table of Contents
@@ -112,12 +118,12 @@ Quality issues found and handled:
 
 ### 2. Milestones
 
-| Milestone | Focus | Key outputs |
-|---|---|---|
-| 1. Proposal | Business questions and hypotheses | Zip code ranking, review volume buckets, schedule comparison |
-| 2. Descriptive statistics | Distributions and spread | Five number summary, star tier analysis, survival rates by zip |
-| 3. Beyond descriptive stats | Correlation and new metrics | Pearson correlations, Quality Score, Market Opportunity Index, JOIN analysis |
-| 4. Storytelling | Present to management | 16 slide deck with charts, tables and recommendations |
+| Milestone | Focus | Key outputs | Report |
+|---|---|---|---|
+| 1. Proposal | Business questions and hypotheses | Zip code ranking, review volume buckets, schedule comparison | [Milestone 1](reports/CoffeeKing_Milestone1.pdf) |
+| 2. Descriptive statistics | Distributions and spread | Five number summary, star tier analysis, survival rates by zip | [Milestone 2](reports/CoffeeKing_Milestone2.pdf) |
+| 3. Beyond descriptive stats | Correlation and new metrics | Pearson correlations, Quality Score, Market Opportunity Index, JOIN analysis | [Milestone 3](reports/CoffeeKing_Milestone3.pdf) |
+| 4. Storytelling | Present to management | 16 slide deck with charts, tables and recommendations | Covered in the [full report](reports/CoffeeKing_Full_Project_Report.pdf) |
 
 ## Findings in Detail
 
@@ -246,17 +252,32 @@ The JOIN analysis compared Yelp's published business rating with the mean of ind
 
 ```
 CoffeeKing-Nashville-sql/
-├── notebooks/    Databricks SQL notebook with the 18 analysis cells
-├── reports/      Full written project report
-└── README.md     Project overview (this file)
+├── notebooks/
+│   └── Coffee_King EDA 2026-05-20 19_35_51.ipynb
+├── reports/
+│   ├── CoffeeKing_Full_Project_Report.pdf
+│   ├── CoffeeKing_Milestone1.pdf
+│   ├── CoffeeKing_Milestone2.pdf
+│   └── CoffeeKing_Milestone3.pdf
+├── LICENSE
+└── README.md
 ```
+
+| File | Description |
+|---|---|
+| [`notebooks/Coffee_King EDA 2026-05-20 19_35_51.ipynb`](notebooks/Coffee_King%20EDA%202026-05-20%2019_35_51.ipynb) | Notebook with the 18 SQL cells: data cleaning, descriptive statistics, correlations, the two original metrics and the JOIN analysis |
+| [`reports/CoffeeKing_Full_Project_Report.pdf`](reports/CoffeeKing_Full_Project_Report.pdf) | Complete written report covering all four milestones, results and recommendations |
+| [`reports/CoffeeKing_Milestone1.pdf`](reports/CoffeeKing_Milestone1.pdf) | Milestone 1: project proposal, research questions and hypotheses |
+| [`reports/CoffeeKing_Milestone2.pdf`](reports/CoffeeKing_Milestone2.pdf) | Milestone 2: descriptive statistics and understanding the data |
+| [`reports/CoffeeKing_Milestone3.pdf`](reports/CoffeeKing_Milestone3.pdf) | Milestone 3: correlations, new metrics and cross table analysis |
+| [`LICENSE`](LICENSE) | MIT licence covering the code and analysis only |
 
 ## How to Reproduce
 
 1. Obtain the Yelp Academic Dataset and filter it for Nashville, TN (five CSV files: business, review, tip, checkin, user).
 2. Create a free Databricks Free Edition workspace.
 3. Upload the five CSV files and create Delta tables named `business`, `review`, `tip`, `checkin` and `user`.
-4. Import the notebook from the `notebooks/` folder into your workspace.
+4. Import the notebook from the `notebooks/` folder into your workspace. Databricks can import `.ipynb` files directly.
 5. Run the SQL cells in order. Each cell keeps its query and its result together.
 
 ## Limitations and Next Steps
